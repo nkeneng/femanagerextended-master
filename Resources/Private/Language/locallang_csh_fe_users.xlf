@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-30T10:52:26Z" product-name="femanagerextended">
+		<header/>
+		<body>
+            			<trans-unit id="language.description">
+            				<source>language</source>
+            			</trans-unit>
+            			<trans-unit id="region.description">
+            				<source>region</source>
+            			</trans-unit>
+            			<trans-unit id="profession.description">
+            				<source>profession</source>
+            			</trans-unit>
+            			<trans-unit id="academic.description">
+            				<source>academic</source>
+            			</trans-unit>
+            			<trans-unit id="workarea.description">
+            				<source>workarea</source>
+            			</trans-unit>
+            			<trans-unit id="other_title.description">
+            				<source>other_title</source>
+            			</trans-unit>
+		</body>
+	</file>
+</xliff>

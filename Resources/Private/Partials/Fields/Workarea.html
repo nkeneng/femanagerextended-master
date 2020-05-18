@@ -1,0 +1,23 @@
+{namespace femanager=In2code\Femanagerextended\ViewHelpers}
+
+<f:render section="default" arguments="{_all}" />
+
+
+
+
+<f:section name="default">
+    <div class="femanager_fieldset femanager_workarea form-group">
+        <label for="femanager_field_workarea" class="col-sm-2 control-label">
+            <f:translate key="tx_femanager_domain_model_user.workarea" />
+            <f:if condition="{femanager:Validation.IsRequiredField(fieldName:'workarea')}">
+                <span>*</span>
+            </f:if>
+        </label>
+        <div class="col-sm-10">
+            <femanager:form.select id="femanager_field_workarea" property="workarea"
+                options="{femanager:Form.GetWorkArea()}" defaultOption="{f:translate(key:'pleaseChooseWorkarea')}"
+                class="form-control"
+                additionalAttributes="{femanager:Validation.FormValidationData(settings:settings,fieldName:'workarea')}" />
+        </div>
+    </div>
+</f:section>
