@@ -15,11 +15,11 @@ class User extends UserFemanager
     protected $language;
 
     /**
-     * other_title
+     * othertitle
      *
      * @var string
      */
-    protected $other_title;
+    protected $othertitle;
 
     /**
      * region
@@ -35,11 +35,11 @@ class User extends UserFemanager
      */
     protected $profession;
     /**
-     * academic
+     * academictitle
      *
      * @var string
      */
-    protected $academic_title;
+    protected $academictitle;
     /**
      * workarea
      *
@@ -83,33 +83,33 @@ class User extends UserFemanager
     /**
      * @return string
      */
-    public function getAcademicTitle(): string
+    public function getAcademictitle(): string
     {
-        return $this->academic_title;
+        return $this->academictitle;
     }
 
     /**
-     * @param string $academic_title
+     * @param string $academictitle
      */
-    public function setAcademicTitle(string $academic_title): void
+    public function setAcademictitle(string $academictitle): void
     {
-        $this->academic_title = $academic_title;
+        $this->academictitle = $academictitle;
     }
 
     /**
      * @return string
      */
-    public function getOtherTitle(): string
+    public function getOthertitle(): string
     {
-        return $this->other_title;
+        return $this->othertitle;
     }
 
     /**
-     * @param string $other_title
+     * @param string $othertitle
      */
-    public function setOtherTitle(string $other_title): void
+    public function setOthertitle(string $othertitle): void
     {
-        $this->other_title = $other_title;
+        $this->othertitle = $othertitle;
     }
 
     /**

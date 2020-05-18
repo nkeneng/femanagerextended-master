@@ -5,9 +5,9 @@ namespace In2code\Femanagerextended\ViewHelpers\Form;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
- * Class GetAcademicTitleViewHelper
+ * Class GetacademictitleViewHelper
  */
-class GetAcademicTitleViewHelper extends AbstractViewHelper
+class GetacademictitleViewHelper extends AbstractViewHelper
 {
     /**
      * @var array

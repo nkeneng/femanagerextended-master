@@ -40,16 +40,6 @@ $tmpFeUsersColumns = [
             ],
         ],
     ],
-    'other_title' => [
-        'exclude' => 1,
-        'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
-            'tx_femanagerextended_domain_model_user.other_title',
-        'config' => [
-            'type' => 'input',
-            'size' => 30,
-            'eval' => 'trim'
-        ],
-    ],
     'workarea' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
@@ -77,10 +67,10 @@ $tmpFeUsersColumns = [
             'eval' => 'trim'
         ],
     ],
-    'academic_title' => [
+    'academictitle' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
-            'tx_femanagerextended_domain_model_user.academic_title',
+            'tx_femanagerextended_domain_model_user.academictitle',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
@@ -109,16 +99,16 @@ $tmpFeUsersColumns = [
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('fe_users', $tmpFeUsersColumns, true);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('fe_users', 'language, region','profession','academic_title','other_title','workarea');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('fe_users', 'language, region','profession','academictitle','othertitle','workarea');
 
 /**
- * Add page TSConfig for the two new fields
+ * Add page TSConfig f
  */
-$tsConfig = 'tx_femanager.flexForm.new.addFieldOptions.language = Language' . PHP_EOL;
-$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.region = Region' . PHP_EOL;
-$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.workarea = Workarea' . PHP_EOL;
-$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.profession = Profession' . PHP_EOL;
-$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.academic_title = academic_title' . PHP_EOL;
-$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.other_title = Other_title' . PHP_EOL;
+$tsConfig = 'tx_femanager.flexForm.new.addFieldOptions.language = language' . PHP_EOL;
+$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.region = region' . PHP_EOL;
+$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.workarea = workarea' . PHP_EOL;
+$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.profession = profession' . PHP_EOL;
+$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.academictitle = academictitle' . PHP_EOL;
+$tsConfig .= 'tx_femanager.flexForm.new.addFieldOptions.othertitle = othertitle' . PHP_EOL;
 $tsConfig .= 'tx_femanager.flexForm.edit < tx_femanager.flexForm.new';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig($tsConfig);

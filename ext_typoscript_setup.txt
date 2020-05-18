@@ -17,9 +17,6 @@ config.tx_extbase{
 	objects {
 		In2code\Femanager\Controller\NewController.className = In2code\Femanagerextended\Controller\NewController
 		In2code\Femanager\Controller\EditController.className = In2code\Femanagerextended\Controller\EditController
-
-		In2code\Femanager\Domain\Validator\ServersideValidator.className = In2code\Femanagerextended\Domain\Validator\CustomServersideValidator
-		In2code\Femanager\Domain\Validator\ClientsideValidator.className = In2code\Femanagerextended\Domain\Validator\CustomClientsideValidator
 	}
 }
 
@@ -29,4 +26,12 @@ plugin.tx_femanager {
 			1 = EXT:femanagerextended/Resources/Private/Partials/
 		}
 	}
+}
+
+plugin.tx_femanager.settings {
+    finishers {
+        1 {
+            class = In2code\Femanagerextended\Finisher\SaleforceRegistration
+        }
+    }
 }

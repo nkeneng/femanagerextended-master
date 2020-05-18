@@ -12,14 +12,14 @@
             			<trans-unit id="profession.description">
             				<source>profession</source>
             			</trans-unit>
-            			<trans-unit id="academic.description">
-            				<source>academic</source>
+            			<trans-unit id="academictitle.description">
+            				<source>academic title</source>
             			</trans-unit>
             			<trans-unit id="workarea.description">
             				<source>workarea</source>
             			</trans-unit>
-            			<trans-unit id="other_title.description">
-            				<source>other_title</source>
+            			<trans-unit id="othertitle.description">
+            				<source>othertitle</source>
             			</trans-unit>
 		</body>
 	</file>
