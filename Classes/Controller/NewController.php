@@ -1,8 +1,16 @@
 <?php
+
 namespace In2code\Femanagerextended\Controller;
 use In2code\Femanagerextended\Domain\Model\User;
+use In2code\Femanagerextended\Domain\Service\DownloadService;
 use In2code\Femanagerextended\Xclass\Extbase\Mvc\Controller\Argument;
+use TYPO3\CMS\Extbase\Mvc\Exception\StopActionException;
+use TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException;
 
+/**
+ * Class NewController
+ * @package In2code\Femanagerextended\Controller
+ */
 class NewController extends \In2code\Femanager\Controller\NewController {
 
     /**
@@ -17,7 +25,6 @@ class NewController extends \In2code\Femanager\Controller\NewController {
         }
     }
 
-
     /**
      * action create
      *
@@ -28,8 +35,18 @@ class NewController extends \In2code\Femanager\Controller\NewController {
      */
     public function createAction(\In2code\Femanager\Domain\Model\User $user)
     {
-//        var_dump($user);
-//        die;
         parent::createAction($user);
+    }
+
+    /**
+     * @throws StopActionException
+     * @throws UnsupportedRequestTypeException
+     */
+    public function createStatusAction()
+    {
+        $request = $this->request->getArguments();
+        $user = $this->userRepository->findByUid($request['user']);
+        $request['user'] = $user;
+        $this->redirectToUri(DownloadService::SendToSaleforce($request));
     }
 }

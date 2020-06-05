@@ -27,8 +27,13 @@ class SalesForceApi
      */
     private $country;
 
+    private $apiData;
+
     public function __construct(User $user)
     {
+        if (isset($GLOBALS['TYPO3_CONF_VARS']['API']) && $GLOBALS['TYPO3_CONF_VARS']['API'] != null){
+            $this->apiData = $GLOBALS['TYPO3_CONF_VARS']['API'];
+        }else $this->apiData = [];
         $this->country = new GetCountriesViewHelper();
         $this->user = $user;
     }
@@ -38,13 +43,16 @@ class SalesForceApi
      */
     public function authenticate()
     {
-        $options = [
-            'grant_type' => 'password',
-            'client_id' => '3MVG9T46ZAw5GTfVl1EcSegTytvUCCcPepgYs0Wp1Voh5qaZDzp8zrs1tavARGExl70YrcfDW.UI18.aL5yvS',
-            'client_secret' => '348927035EBA43290EAF8A575388CABBA84B82AB954980CAACA96C87C1E2F6EB',
-            'username' => 'tobi@aleksundshantu.com',
-            'password' => '@Mueller138dRztBwgJP1ZbZiTOVsMqmashT',
-        ];
+        if (count($this->apiData) > 0) {
+            $options = [
+                'grant_type' => $this->apiData['grant_type'],
+                'client_id' => $this->apiData['client_id'],
+                'client_secret' => $this->apiData['client_secret'],
+                'username' => $this->apiData['username'],
+                'password' => $this->apiData['password'],
+            ];
+        } else $options = [];
+
         $salesforce = new PasswordAuthentication($options);
         try {
             $salesforce->authenticate();

@@ -3,6 +3,12 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    'In2code.femanagerextended',
+    'Pi1',
+    'Femanager Extend'
+);
+
 /**
  * Add new fields to fe_users table
  */
