@@ -24,18 +24,18 @@ class SaleforceRegistration extends AbstractFinisher
      */
     public function initializeFinisher()
     {
-//        $salesforceApi = new SalesForceApi($this->user);
-//        $salesforceApi->authenticate();
-//        $id_contact = $salesforceApi->checkUserInSalesforce();
-//        $contact_note_data = $salesforceApi->contactSalesforceData();
-//        if ($id_contact == null) {
-//            $id_contact=  $salesforceApi->createContact();
-//            $id_note = $salesforceApi->createContactNote($contact_note_data);
-//        } else {
-//            $id_note = $salesforceApi->createB2BNote($contact_note_data);
-//        }
-//        if ($id_note != null) {
-//            $salesforceApi->linkContactAndNote($id_note, $id_contact);
-//        }
+        $salesforceApi = new SalesForceApi($this->user);
+        $salesforceApi->authenticate();
+        $id_contact = $salesforceApi->checkUserInSalesforce();
+        $contact_note_data = $salesforceApi->contactSalesforceData();
+        if ($id_contact == null) {
+            $id_contact=  $salesforceApi->createContact();
+            $id_note = $salesforceApi->createContactNote($contact_note_data);
+        } else {
+            $id_note = $salesforceApi->createB2BNote($contact_note_data);
+        }
+        if ($id_note != null) {
+            $salesforceApi->linkContactAndNote($id_note, $id_contact);
+        }
     }
 }
