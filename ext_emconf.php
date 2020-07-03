@@ -12,11 +12,11 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'femanagerextended',
-    'description' => 'Extend fe_users and femanager with a new field and a new validation',
+    'description' => 'Extend fe_users and femanager with new fields ',
     'category' => 'plugin',
-    'author' => '',
-    'author_email' => '',
-    'author_company' => '',
+    'author' => 'Steven Nkeneng',
+    'author_email' => 'nkeneng.junior@gmail.com',
+    'author_company' => 'AleksundShantu',
     'shy' => '',
     'priority' => '',
     'module' => '',
