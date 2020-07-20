@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Aleksundshantu\\FemanagerExtended\\": "Classes/"
+      "Aleksundshantu\\Femanagerextended\\": "Classes/"
     }
   },
   "replace": {
