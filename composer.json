@@ -12,15 +12,16 @@
   "type": "typo3-cms-extension",
   "license": "GPL-3.0",
   "require": {
-    "typo3/cms": ">=7.6.0 <9.0.0"
+    "typo3/cms": ">=7.6.0 <10.0.0"
   },
   "autoload": {
     "psr-4": {
-      "Aleksundshantu\\Femanagerextended\\": "Classes/"
+      "Aleksundshantu\\FemanagerExtended\\": "Classes/"
     }
   },
-  "require-dev": {
-    "symfony/var-dumper": "^5.0"
+  "replace": {
+    "femanagerextended": "self.version",
+    "typo3-ter/femanagerextended": "self.version"
   },
   "extra": {
     "typo3/cms": {
