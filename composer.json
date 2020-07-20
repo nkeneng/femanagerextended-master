@@ -29,8 +29,8 @@
   },
   "scripts": {
     "post-autoload-dump": [
-      "mkdir -p .Build/Web/typo3conf/ext/",
-      "[ -L .Build/Web/typo3conf/ext/femanagerextended ] || ln -svnf ../../../../. .Build/Web/typo3conf/ext/femanagerextended"
+      "mkdir -p .Build/Public/typo3conf/ext/",
+      "[ -L .Build/Public/typo3conf/ext/femanagerextended ] || ln -svnf ../../../../. .Build/Public/typo3conf/ext/femanagerextended"
     ]
   },
   "extra": {
