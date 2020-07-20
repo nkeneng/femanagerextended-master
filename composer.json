@@ -1,7 +1,7 @@
 {
   "name": "aleksundshantu/femanagerextended",
   "description": "Example addon extension to TYPO3 extension femanager",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "keywords": ["typo3", "form", "femanagerextended", "fe_users", "registration"],
   "authors": [
     {
