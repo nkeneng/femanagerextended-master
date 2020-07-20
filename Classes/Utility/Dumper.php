@@ -1,12 +1,12 @@
 <?php
 
 
-namespace In2code\Femanagerextended\Utility;
+namespace Aleksundshantu\Femanagerextended\Utility;
 
 /**
  * Class Dumper
  * to debug variables on screen
- * @package In2code\Femanagerextended\Utility
+ * @package Aleksundshantu\Femanagerextended\Utility
  */
 class Dumper
 {

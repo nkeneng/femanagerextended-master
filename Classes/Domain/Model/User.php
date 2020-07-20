@@ -1,6 +1,6 @@
 <?php
 
-namespace In2code\Femanagerextended\Domain\Model;
+namespace Aleksundshantu\Femanagerextended\Domain\Model;
 
 use In2code\Femanager\Domain\Model\User as UserFemanager;
 

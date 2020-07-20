@@ -1,9 +1,9 @@
 <?php
 
-namespace In2code\Femanagerextended\Finisher;
+namespace Aleksundshantu\Femanagerextended\Finisher;
 
-use In2code\Femanagerextended\Domain\Model\User;
-use In2code\Femanagerextended\Domain\Service\SalesForceApi;
+use Aleksundshantu\Femanagerextended\Domain\Model\User;
+use Aleksundshantu\Femanagerextended\Domain\Service\SalesForceApi;
 use In2code\Femanager\Finisher\AbstractFinisher;
 
 /**

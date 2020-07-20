@@ -1,14 +1,14 @@
 <?php
 
-namespace In2code\Femanagerextended\Domain\Service;
+namespace Aleksundshantu\Femanagerextended\Domain\Service;
 
-use In2code\Femanagerextended\Domain\Model\User;
-use In2code\Femanagerextended\Utility\Dumper;
-use In2code\Femanagerextended\ViewHelpers\Form\GetacademictitleViewHelper;
-use In2code\Femanagerextended\ViewHelpers\Form\GetCountriesViewHelper;
-use In2code\Femanagerextended\ViewHelpers\Form\GetLanguageViewHelper;
-use In2code\Femanagerextended\ViewHelpers\Form\GetRegionViewHelper;
-use In2code\Femanagerextended\ViewHelpers\Form\GetWorkAreaViewHelper;
+use Aleksundshantu\Femanagerextended\Domain\Model\User;
+use Aleksundshantu\Femanagerextended\Utility\Dumper;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetacademictitleViewHelper;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetCountriesViewHelper;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetLanguageViewHelper;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetRegionViewHelper;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetWorkAreaViewHelper;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;

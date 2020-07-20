@@ -1,9 +1,9 @@
 <?php
 
-namespace In2code\Femanagerextended\Controller;
+namespace Aleksundshantu\Femanagerextended\Controller;
 
-use \In2code\Femanagerextended\Domain\Model\User;
-use In2code\Femanagerextended\Xclass\Extbase\Mvc\Controller\Argument;
+use \Aleksundshantu\Femanagerextended\Domain\Model\User;
+use Aleksundshantu\Femanagerextended\Xclass\Extbase\Mvc\Controller\Argument;
 
 class EditController extends \In2code\Femanager\Controller\EditController {
 

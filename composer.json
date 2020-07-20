@@ -1,8 +1,8 @@
 {
-  "name": "in2code/femanagerextended",
+  "name": "aleksundshantu/femanagerextended",
   "description": "Example addon extension to TYPO3 extension femanager",
   "version": "1.0.2",
-  "keywords": ["typo3", "form", "femanager", "fe_users", "registration"],
+  "keywords": ["typo3", "form", "femanagerextended", "fe_users", "registration"],
   "authors": [
     {
       "name": "Steven nkeneng",
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "In2code\\Femanagerextended\\": "Classes/"
+      "Aleksundshantu\\Femanagerextended\\": "Classes/"
     }
   },
   "require-dev": {

@@ -1,15 +1,15 @@
 <?php
 
-namespace In2code\Femanagerextended\Controller;
-use In2code\Femanagerextended\Domain\Model\User;
-use In2code\Femanagerextended\Domain\Service\DownloadService;
-use In2code\Femanagerextended\Xclass\Extbase\Mvc\Controller\Argument;
+namespace Aleksundshantu\Femanagerextended\Controller;
+use Aleksundshantu\Femanagerextended\Domain\Model\User;
+use Aleksundshantu\Femanagerextended\Domain\Service\DownloadService;
+use Aleksundshantu\Femanagerextended\Xclass\Extbase\Mvc\Controller\Argument;
 use TYPO3\CMS\Extbase\Mvc\Exception\StopActionException;
 use TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException;
 
 /**
  * Class NewController
- * @package In2code\Femanagerextended\Controller
+ * @package Aleksundshantu\Femanagerextended\Controller
  */
 class NewController extends \In2code\Femanager\Controller\NewController {
 

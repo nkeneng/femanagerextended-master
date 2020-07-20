@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'In2code.femanagerextended',
+    'Aleksundshantu.femanagerextended',
     'Pi1',
     'Femanager Extend'
 );

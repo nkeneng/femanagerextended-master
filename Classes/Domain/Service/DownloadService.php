@@ -1,10 +1,10 @@
 <?php
 
-namespace In2code\Femanagerextended\Domain\Service;
+namespace Aleksundshantu\Femanagerextended\Domain\Service;
 
 
 use In2code\Femanager\Domain\Repository\UserRepository;
-use In2code\Femanagerextended\Domain\Model\User;
+use Aleksundshantu\Femanagerextended\Domain\Model\User;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 
 

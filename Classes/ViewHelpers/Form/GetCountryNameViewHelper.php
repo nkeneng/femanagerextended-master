@@ -1,9 +1,9 @@
 <?php
 declare (strict_types = 1);
-namespace In2code\Femanagerextended\ViewHelpers\Form;
+namespace Aleksundshantu\Femanagerextended\ViewHelpers\Form;
 
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
-use In2code\Femanagerextended\ViewHelpers\Form\GetCountriesViewHelper;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetCountriesViewHelper;
 
 /**
  * Class GetCountryNameViewHelper

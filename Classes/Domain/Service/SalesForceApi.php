@@ -1,12 +1,12 @@
 <?php
 
-namespace In2code\Femanagerextended\Domain\Service;
+namespace Aleksundshantu\Femanagerextended\Domain\Service;
 
 use bjsmasth\Salesforce\Authentication\PasswordAuthentication;
 use bjsmasth\Salesforce\CRUD;
 use bjsmasth\Salesforce\Exception\SalesforceAuthentication;
-use In2code\Femanagerextended\Domain\Model\User;
-use In2code\Femanagerextended\ViewHelpers\Form\GetCountriesViewHelper;
+use Aleksundshantu\Femanagerextended\Domain\Model\User;
+use Aleksundshantu\Femanagerextended\ViewHelpers\Form\GetCountriesViewHelper;
 
 /**
  * Class SalesForceApi

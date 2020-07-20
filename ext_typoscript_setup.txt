@@ -3,10 +3,10 @@ config.tx_extbase{
 		classes{
 			In2code\Femanager\Domain\Model\User {
 				subclasses {
-					0 = In2code\Femanagerextended\Domain\Model\User
+					0 = Aleksundshantu\Femanagerextended\Domain\Model\User
 				}
 			}
-			In2code\Femanagerextended\Domain\Model\User {
+			Aleksundshantu\Femanagerextended\Domain\Model\User {
 				mapping {
 					tableName = fe_users
 					recordType = 0
@@ -15,8 +15,8 @@ config.tx_extbase{
 		}
 	}
 	objects {
-		In2code\Femanager\Controller\NewController.className = In2code\Femanagerextended\Controller\NewController
-		In2code\Femanager\Controller\EditController.className = In2code\Femanagerextended\Controller\EditController
+		In2code\Femanager\Controller\NewController.className = Aleksundshantu\Femanagerextended\Controller\NewController
+		In2code\Femanager\Controller\EditController.className = Aleksundshantu\Femanagerextended\Controller\EditController
 	}
 }
 
@@ -31,7 +31,7 @@ plugin.tx_femanager {
 plugin.tx_femanager.settings {
     finishers {
         1 {
-            class = In2code\Femanagerextended\Finisher\SaleforceRegistration
+            class = Aleksundshantu\Femanagerextended\Finisher\SaleforceRegistration
         }
     }
 }

@@ -12,7 +12,7 @@ $signalSlotDispatcher = GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Signa
 $signalSlotDispatcher->connect(
     'In2code\Femanager\Controller\NewController',
     'createActionBeforePersist',
-    'In2code\Femanagerextended\Domain\Service\SaveFurtherInformationService',
+    'Aleksundshantu\Femanagerextended\Domain\Service\SaveFurtherInformationService',
     'replaceUsername',
     FALSE
 );
@@ -23,7 +23,7 @@ $signalSlotDispatcher->connect(
 $signalSlotDispatcher->connect(
     'In2code\Femanager\Controller\NewController',
     'createActionBeforePersist',
-    'In2code\Femanagerextended\Domain\Service\SaveFurtherInformationService',
+    'Aleksundshantu\Femanagerextended\Domain\Service\SaveFurtherInformationService',
     'validData',
     FALSE
 );
@@ -34,10 +34,10 @@ $signalSlotDispatcher->connect(
 $signalSlotDispatcher->connect(
     'In2code\Femanager\Controller\NewController',
     'createActionBeforePersist',
-    'In2code\Femanagerextended\Domain\Service\SaveFurtherInformationService',
+    'Aleksundshantu\Femanagerextended\Domain\Service\SaveFurtherInformationService',
     'saveUserGroup',
     FALSE
 );
 
 
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Extbase\\Mvc\\Controller\\Argument'] = array('className' => 'In2code\\Femanagerextended\\Xclass\\Extbase\\Mvc\\Controller\\Argument');
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Extbase\\Mvc\\Controller\\Argument'] = array('className' => 'Aleksundshantu\\Femanagerextended\\Xclass\\Extbase\\Mvc\\Controller\\Argument');

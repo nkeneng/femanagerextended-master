@@ -1,5 +1,5 @@
 <?php
-use In2code\Femanagerextended\Controller;
+use Aleksundshantu\Femanagerextended\Controller;
 
 /**
  * Definitions for routes provided by EXT:backend

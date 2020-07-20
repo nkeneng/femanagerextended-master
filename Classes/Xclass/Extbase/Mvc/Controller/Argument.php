@@ -1,5 +1,5 @@
 <?php
-namespace In2code\Femanagerextended\Xclass\Extbase\Mvc\Controller;
+namespace Aleksundshantu\Femanagerextended\Xclass\Extbase\Mvc\Controller;
 class Argument extends \TYPO3\CMS\Extbase\Mvc\Controller\Argument
 
 {

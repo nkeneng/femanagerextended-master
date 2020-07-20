@@ -1,7 +1,7 @@
 <?php
 declare (strict_types = 1);
 
-namespace In2code\Femanagerextended\ViewHelpers\Be;
+namespace Aleksundshantu\Femanagerextended\ViewHelpers\Be;
 
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
